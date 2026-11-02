@@ -29,3 +29,5 @@ Compiled.xml
 /adf-store/
 /.dev.env
 /.sdkmanrc
+.DS_Store
+darq-webapp/qdar-analysis-client/proxy.conf-dev.json

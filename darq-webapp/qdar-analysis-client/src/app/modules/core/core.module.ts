@@ -3,6 +3,8 @@ import {CommonModule} from '@angular/common';
 import {CoreRoutingModule} from './core-routing.module';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
+import {SittHeaderComponent} from './components/sitt-header/sitt-header.component';
+import {SittFooterComponent} from './components/sitt-footer/sitt-footer.component';
 import {HomeComponent} from './components/home/home.component';
 import {ErrorPageComponent} from './components/error-page/error-page.component';
 import {DamAuthenticationModule, DamMessagesModule} from '@usnistgov/ngx-dam-framework-legacy';
@@ -15,11 +17,14 @@ import {VerifyEmailComponent} from './components/verify-email/verify-email.compo
 import {UpdateProfileComponent} from './components/update-profile/update-profile.component';
 import {ResetPasswordComponent} from './components/reset-password/reset-password.component';
 import {DownloadComponent} from './components/download/download.component';
+import {AboutComponent} from './components/about/about.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
+    SittHeaderComponent,
+    SittFooterComponent,
     HomeComponent,
     ErrorPageComponent,
     RegistrationComponent,
@@ -28,6 +33,7 @@ import {DownloadComponent} from './components/download/download.component';
     UpdateProfileComponent,
     ResetPasswordComponent,
     DownloadComponent,
+    AboutComponent,
   ],
   imports: [
     CommonModule,
@@ -41,12 +47,15 @@ import {DownloadComponent} from './components/download/download.component';
   exports: [
     HeaderComponent,
     FooterComponent,
+    SittHeaderComponent,
+    SittFooterComponent,
     HomeComponent,
     ErrorPageComponent,
     RegistrationComponent,
     ForgotPasswordComponent,
     UpdateProfileComponent,
     DownloadComponent,
+    AboutComponent,
   ],
 })
 export class CoreModule { }
